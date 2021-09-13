@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-Annyoo2021-jd_v4_bot
+    types: sync-SallyU-jfuidvsfjkd
 jobs:
   repo-sync:
     env:
@@ -18,7 +18,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync Annyoo2021-jd_v4_bot
+      - name: sync SallyU-jfuidvsfjkd
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
