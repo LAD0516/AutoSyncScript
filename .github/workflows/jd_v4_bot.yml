@@ -1,4 +1,4 @@
-name: Annyoo2021-sync
+name: jd_v4_bot-sync
 on:
   schedule:
     - cron: '1 * */7 * *'
