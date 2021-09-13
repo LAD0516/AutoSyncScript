@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-SallyU-jfuidvsfjkd
+    types: sync-SallyU-fuidvsfjkd
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync SallyU-jfuidvsfjkd
+      - name: sync SallyU-fuidvsfjkd
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/SallyU/jfuidvsfjkd"
+          source_repo: "https://github.com/SallyU/fuidvsfjkd"
           source_branch: "master"
           destination_branch: "jiaobenheji"
           github_token: ${{ secrets.PAT }}
